@@ -15,22 +15,22 @@ governing permissions and limitations under the License.
 
 'use strict';
 
-const WHILE_USING_APP = "WHILE_USING_APP";
-const ALWAYS_ALLOW = "ALWAYS_ALLOW";
-const NONE = "NONE";
+const CONST_WHILE_USING_APP = "WHILE_USING_APP";
+const CONST_ALWAYS_ALLOW = "ALWAYS_ALLOW";
+const CONST_NONE = "NONE";
 
 class ACPPlacesMonitorLocationPermission {
 
   static get WHILE_USING_APP() {
-    return WHILE_USING_APP;
+    return CONST_WHILE_USING_APP;
   }
 
   static get ALWAYS_ALLOW() {
-    return ALWAYS_ALLOW;
+    return CONST_ALWAYS_ALLOW;
   }
 
   static get NONE() {
-    return NONE;
+    return CONST_NONE;
   }
 }
 
