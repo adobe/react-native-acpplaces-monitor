@@ -1,4 +1,4 @@
-PROJECT_NAME = ACPPlaces
+PROJECT_NAME = ACPPlacesMonitor
 
 setup:
 	(npm install)
@@ -19,7 +19,7 @@ build-sample-android:
 	(cd sample/ACP*Sample/android && ./gradlew assembleRelease)
 
 build-sample-ios:
-	(cd sample/ACP*Sample/ios && xcodebuild build -project ACPPlacesSample.xcodeproj -scheme ACPPlacesSample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
+	(cd sample/ACP*Sample/ios && xcodebuild build -project ACPPlacesMonitorSample.xcodeproj -scheme ACPPlacesMonitorSample CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED="NO" CODE_SIGNING_ALLOWED="NO")
 
 run-tests:
 	jest --testPathIgnorePatterns sample/ node_modules/ --modulePathIgnorePatterns sample/ --runInBand

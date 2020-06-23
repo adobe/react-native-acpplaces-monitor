@@ -16,6 +16,8 @@ governing permissions and limitations under the License.
 'use strict';
 const ACPPlacesMonitor = require('react-native').NativeModules.ACPPlacesMonitor;
 
+import type {ACPPlacesMonitorLocationPermission} from './models/ACPPlacesMonitorLocationPermission';
+
 module.exports = {
 
   extensionVersion(): Promise<string> {
@@ -34,7 +36,7 @@ module.exports = {
     ACPPlacesMonitor.updateLocation();
   },
 
-  setRequestLocationPermission(permission : string) {
+  setRequestLocationPermission(permission : ACPPlacesMonitorLocationPermission) {
     ACPPlacesMonitor.setRequestLocationPermission(permission);
   }
 };

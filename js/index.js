@@ -17,7 +17,7 @@ governing permissions and limitations under the License.
 
 module.exports = {
   // Native models
-  get ACPPlacesAuthStatus() {
+  get ACPPlacesMonitorLocationPermission() {
     return require('./models/ACPPlacesMonitorLocationPermission');
   },
 
