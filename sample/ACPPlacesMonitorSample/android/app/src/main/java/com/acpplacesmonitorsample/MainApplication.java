@@ -62,7 +62,7 @@ public class MainApplication extends Application implements ReactApplication {
     SoLoader.init(this, /* native exopackage */ false);
 
     MobileCore.setApplication(this);
-    MobileCore.setLogLevel(LoggingMode.DEBUG);
+    MobileCore.setLogLevel(LoggingMode.VERBOSE);
     MobileCore.setWrapperType(WrapperType.REACT_NATIVE);
 
     try {

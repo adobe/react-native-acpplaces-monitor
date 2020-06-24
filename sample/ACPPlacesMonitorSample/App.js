@@ -50,7 +50,7 @@ export default class App extends Component<Props> {
   }
 
   setRequestLocationPermission() {
-    ACPPlacesMonitor.setRequestLocationPermission(ACPPlacesMonitorLocationPermission.ALWAYS_ALLOW());
+    ACPPlacesMonitor.setRequestLocationPermission(ACPPlacesMonitorLocationPermission.ALWAYS_ALLOW);
   }
 }
 
