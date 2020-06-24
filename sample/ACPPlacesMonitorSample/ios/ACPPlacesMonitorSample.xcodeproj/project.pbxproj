@@ -12,13 +12,13 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		92430BA824A3CF8100336176 /* libRCTACPPlacesMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92430BA724A3CF6200336176 /* libRCTACPPlacesMonitor.a */; };
 		925A72E824A3C2D100AE04F8 /* libRCTACPPlaces.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 925A72C224A3C2BF00AE04F8 /* libRCTACPPlaces.a */; };
 		9282E9082490BE7500C77F5A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E9072490BE7500C77F5A /* CoreLocation.framework */; };
 		9282E9302490C01000C77F5A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		9282E9322490C01900C77F5A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E9312490C01900C77F5A /* SystemConfiguration.framework */; };
 		9282E9342490C02200C77F5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E9332490C02200C77F5A /* UIKit.framework */; };
 		9282E9752490C28700C77F5A /* libRCTACPCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E96E2490C26200C77F5A /* libRCTACPCore.a */; };
-		9282E9762490C28C00C77F5A /* libRCTACPPlacesMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E9742490C27700C77F5A /* libRCTACPPlacesMonitor.a */; };
 		9282E9952490C34F00C77F5A /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E98B2490C33100C77F5A /* libRCTVibration.a */; };
 		9282E9962490C36C00C77F5A /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E9922490C34A00C77F5A /* libRCTText.a */; };
 		9282E9972490C37F00C77F5A /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E97F2490C2DB00C77F5A /* libRCTWebSocket.a */; };
@@ -46,6 +46,13 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = ACPPlacesMonitorSample;
 		};
+		92430BA624A3CF6200336176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92430BA224A3CF6200336176 /* RCTACPPlacesMonitor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTACPPlacesMonitor;
+		};
 		925A72C124A3C2BF00AE04F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 925A72BC24A3C2BE00AE04F8 /* RCTACPPlaces.xcodeproj */;
@@ -59,13 +66,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RCTACPCore;
-		};
-		9282E9732490C27700C77F5A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9282E96F2490C27600C77F5A /* RCTACPPlacesMonitor.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = RCTACPPlacesMonitor;
 		};
 		9282E97E2490C2DB00C77F5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -347,12 +347,12 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ACPPlacesMonitorSample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ACPPlacesMonitorSample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ACPPlacesMonitorSample/main.m; sourceTree = "<group>"; };
+		92430BA224A3CF6200336176 /* RCTACPPlacesMonitor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTACPPlacesMonitor.xcodeproj; path = "../node_modules/@adobe/react-native-acpplaces-monitor/ios/RCTACPPlacesMonitor.xcodeproj"; sourceTree = "<group>"; };
 		925A72BC24A3C2BE00AE04F8 /* RCTACPPlaces.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTACPPlaces.xcodeproj; path = "../node_modules/@adobe/react-native-acpplaces/ios/RCTACPPlaces.xcodeproj"; sourceTree = "<group>"; };
 		9282E9072490BE7500C77F5A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9282E9312490C01900C77F5A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9282E9332490C02200C77F5A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9282E9692490C26200C77F5A /* RCTACPCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTACPCore.xcodeproj; path = "../node_modules/@adobe/react-native-acpcore/ios/RCTACPCore.xcodeproj"; sourceTree = "<group>"; };
-		9282E96F2490C27600C77F5A /* RCTACPPlacesMonitor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTACPPlacesMonitor.xcodeproj; path = "../node_modules/@adobe/react-native-acpplaces-monitor/ios/RCTACPPlacesMonitor.xcodeproj"; sourceTree = "<group>"; };
 		9282E9772490C2DB00C77F5A /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		9282E9862490C33100C77F5A /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
 		9282E98C2490C34A00C77F5A /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -385,6 +385,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92430BA824A3CF8100336176 /* libRCTACPPlacesMonitor.a in Frameworks */,
 				925A72E824A3C2D100AE04F8 /* libRCTACPPlaces.a in Frameworks */,
 				92B90A9E24914EC900CCD89F /* libReact.a in Frameworks */,
 				92B909DA2490CEB100CCD89F /* UserNotifications.framework in Frameworks */,
@@ -402,7 +403,6 @@
 				9282E9972490C37F00C77F5A /* libRCTWebSocket.a in Frameworks */,
 				9282E9962490C36C00C77F5A /* libRCTText.a in Frameworks */,
 				9282E9952490C34F00C77F5A /* libRCTVibration.a in Frameworks */,
-				9282E9762490C28C00C77F5A /* libRCTACPPlacesMonitor.a in Frameworks */,
 				9282E9752490C28700C77F5A /* libRCTACPCore.a in Frameworks */,
 				9282E9342490C02200C77F5A /* UIKit.framework in Frameworks */,
 				9282E9322490C01900C77F5A /* SystemConfiguration.framework in Frameworks */,
@@ -463,9 +463,10 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				92B909782490CCD200CCD89F /* React.xcodeproj */,
+				92430BA224A3CF6200336176 /* RCTACPPlacesMonitor.xcodeproj */,
 				925A72BC24A3C2BE00AE04F8 /* RCTACPPlaces.xcodeproj */,
 				9282EA092490C91200C77F5A /* RCTGeolocation.xcodeproj */,
-				92B909782490CCD200CCD89F /* React.xcodeproj */,
 				9282E9FB2490C6B200C77F5A /* RCTNetwork.xcodeproj */,
 				9282E9C62490C68400C77F5A /* RCTSettings.xcodeproj */,
 				9282E9BD2490C67100C77F5A /* RCTLinking.xcodeproj */,
@@ -476,7 +477,6 @@
 				9282E98C2490C34A00C77F5A /* RCTText.xcodeproj */,
 				9282E9862490C33100C77F5A /* RCTVibration.xcodeproj */,
 				9282E9772490C2DB00C77F5A /* RCTWebSocket.xcodeproj */,
-				9282E96F2490C27600C77F5A /* RCTACPPlacesMonitor.xcodeproj */,
 				9282E9692490C26200C77F5A /* RCTACPCore.xcodeproj */,
 			);
 			name = Libraries;
@@ -505,6 +505,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		92430BA324A3CF6200336176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92430BA724A3CF6200336176 /* libRCTACPPlacesMonitor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		925A72BD24A3C2BE00AE04F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,14 +525,6 @@
 			isa = PBXGroup;
 			children = (
 				9282E96E2490C26200C77F5A /* libRCTACPCore.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9282E9702490C27600C77F5A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9282E9742490C27700C77F5A /* libRCTACPPlacesMonitor.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -728,8 +728,8 @@
 					ProjectRef = 925A72BC24A3C2BE00AE04F8 /* RCTACPPlaces.xcodeproj */;
 				},
 				{
-					ProductGroup = 9282E9702490C27600C77F5A /* Products */;
-					ProjectRef = 9282E96F2490C27600C77F5A /* RCTACPPlacesMonitor.xcodeproj */;
+					ProductGroup = 92430BA324A3CF6200336176 /* Products */;
+					ProjectRef = 92430BA224A3CF6200336176 /* RCTACPPlacesMonitor.xcodeproj */;
 				},
 				{
 					ProductGroup = 9282E9B62490C63B00C77F5A /* Products */;
@@ -789,6 +789,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		92430BA724A3CF6200336176 /* libRCTACPPlacesMonitor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTACPPlacesMonitor.a;
+			remoteRef = 92430BA624A3CF6200336176 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		925A72C224A3C2BF00AE04F8 /* libRCTACPPlaces.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -801,13 +808,6 @@
 			fileType = archive.ar;
 			path = libRCTACPCore.a;
 			remoteRef = 9282E96D2490C26200C77F5A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9282E9742490C27700C77F5A /* libRCTACPPlacesMonitor.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTACPPlacesMonitor.a;
-			remoteRef = 9282E9732490C27700C77F5A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		9282E97F2490C2DB00C77F5A /* libRCTWebSocket.a */ = {
