@@ -29,8 +29,6 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRCTACPPlacesMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTACPPlacesMonitor.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B0681EAF8D768C66B6EE93B /* Pods-RCTACPPlacesMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTACPPlacesMonitor.debug.xcconfig"; path = "Target Support Files/Pods-RCTACPPlacesMonitor/Pods-RCTACPPlacesMonitor.debug.xcconfig"; sourceTree = "<group>"; };
-		4B5843F2B0C801BC1A1324C3 /* Pods-RCTACPPlacesMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTACPPlacesMonitor.release.xcconfig"; path = "Target Support Files/Pods-RCTACPPlacesMonitor/Pods-RCTACPPlacesMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		9282E8E12490995300C77F5A /* ACPPlacesMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPPlacesMonitor.h; sourceTree = "<group>"; };
 		9282E8E22490995300C77F5A /* libACPPlacesMonitor_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libACPPlacesMonitor_iOS.a; sourceTree = "<group>"; };
 		9282E8E5249099CA00C77F5A /* RCTACPPlacesMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTACPPlacesMonitor.m; path = src/RCTACPPlacesMonitor.m; sourceTree = "<group>"; };
@@ -64,10 +62,7 @@
 		556F350AF4D2ECA243E2E309 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4B0681EAF8D768C66B6EE93B /* Pods-RCTACPPlacesMonitor.debug.xcconfig */,
-				4B5843F2B0C801BC1A1324C3 /* Pods-RCTACPPlacesMonitor.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +76,7 @@
 				9282E8DF2490995300C77F5A /* libs */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				556F350AF4D2ECA243E2E309 /* Pods */,
+				9282E8E12490995300C77F5A /* ACPPlacesMonitor.h */,
 				61E9F833B633D65BBD2D6021 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -105,7 +101,6 @@
 		9282E8E02490995300C77F5A /* include */ = {
 			isa = PBXGroup;
 			children = (
-				9282E8E12490995300C77F5A /* ACPPlacesMonitor.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -284,7 +279,6 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B0681EAF8D768C66B6EE93B /* Pods-RCTACPPlacesMonitor.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -308,7 +302,6 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B5843F2B0C801BC1A1324C3 /* Pods-RCTACPPlacesMonitor.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
