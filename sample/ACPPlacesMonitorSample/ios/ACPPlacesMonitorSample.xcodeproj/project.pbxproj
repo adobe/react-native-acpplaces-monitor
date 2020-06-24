@@ -348,6 +348,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ACPPlacesMonitorSample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ACPPlacesMonitorSample/main.m; sourceTree = "<group>"; };
 		92430BA224A3CF6200336176 /* RCTACPPlacesMonitor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTACPPlacesMonitor.xcodeproj; path = "../node_modules/@adobe/react-native-acpplaces-monitor/ios/RCTACPPlacesMonitor.xcodeproj"; sourceTree = "<group>"; };
+		92430BF124A407AE00336176 /* adobe-sj copy.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "adobe-sj copy.gpx"; path = "../../../../../../../Downloads/adobe-sj copy.gpx"; sourceTree = "<group>"; };
 		925A72BC24A3C2BE00AE04F8 /* RCTACPPlaces.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTACPPlaces.xcodeproj; path = "../node_modules/@adobe/react-native-acpplaces/ios/RCTACPPlaces.xcodeproj"; sourceTree = "<group>"; };
 		9282E9072490BE7500C77F5A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9282E9312490C01900C77F5A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -485,6 +486,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				92430BF124A407AE00336176 /* adobe-sj copy.gpx */,
 				13B07FAE1A68108700A75B9A /* ACPPlacesMonitorSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ACPPlacesMonitorSampleTests */,

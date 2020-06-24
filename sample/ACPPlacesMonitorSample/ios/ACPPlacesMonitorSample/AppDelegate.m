@@ -27,7 +27,7 @@ written permission of Adobe. (See LICENSE-MIT for details)
 {
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
 RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
-  moduleName:@"ACPPlacesSample"
+  moduleName:@"ACPPlacesMonitorSample"
   initialProperties:nil];
 
 rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
@@ -39,7 +39,7 @@ self.window.rootViewController = rootViewController;
 [self.window makeKeyAndVisible];
 
 [ACPCore setLogLevel:ACPMobileLogLevelVerbose];
-[ACPCore configureWithAppId:@"yourAppId"];
+[ACPCore configureWithAppId:@"launch-EN81be7cedb7f14132968641a6ec683adf"];
 [ACPCore setWrapperType:ACPMobileWrapperTypeReactNative];
 [ACPIdentity registerExtension];
 [ACPLifecycle registerExtension];
@@ -47,7 +47,12 @@ self.window.rootViewController = rootViewController;
 [ACPPlaces registerExtension];
 [ACPPlacesMonitor registerExtension];
 
-[ACPCore start:nil];
+
+[ACPCore start:^{
+       [ACPCore lifecycleStart:nil];
+       
+       [ACPPlacesMonitor start];
+   }];
 
 return YES;
 }
