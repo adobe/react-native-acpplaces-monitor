@@ -13,13 +13,12 @@ governing permissions and limitations under the License.
 */
 
 jest.mock('../node_modules/react-native/Libraries/BatchedBridge/NativeModules', () => ({
-  ACPPlaces: {
+  ACPPlacesMonitor: {
     extensionVersion: jest.fn(() => new Promise(resolve => resolve())),
-    getNearbyPointsOfInterest: jest.fn(() => new Promise(resolve => resolve())),
-    processGeofence: jest.fn(),
-    getCurrentPointsOfInterest: jest.fn(() => new Promise(resolve => resolve())),
-    getLastKnownLocation: jest.fn(() => new Promise(resolve => resolve())),
-    clear: jest.fn(),
-    setAuthorizationStatus: jest.fn(),
+    start: jest.fn(),
+    stop: jest.fn(),
+    updateLocation: jest.fn(),
+    setRequestLocationPermission: jest.fn(),
+    setPlacesMonitorMode: jest.fn(),
   }
 }));
