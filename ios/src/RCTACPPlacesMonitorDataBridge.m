@@ -13,30 +13,17 @@ governing permissions and limitations under the License.
 #import "RCTACPPlacesMonitorDataBridge.h"
 
   // @{link PlacesAuthorizationStatus}
-static NSString* const ACP_PLACES_AUTH_STATUS_DENIED = @"ACP_PLACES_AUTH_STATUS_DENIED";
-static NSString* const ACP_PLACES_AUTH_STATUS_ALWAYS = @"ACP_PLACES_AUTH_STATUS_ALWAYS";
-static NSString* const ACP_PLACES_AUTH_STATUS_UNKNOWN = @"ACP_PLACES_AUTH_STATUS_UNKNOWN";
-static NSString* const ACP_PLACES_AUTH_STATUS_RESTRICTED = @"ACP_PLACES_AUTH_STATUS_RESTRICTED";
-static NSString* const ACP_PLACES_AUTH_STATUS_WHEN_IN_USE = @"ACP_PLACES_AUTH_STATUS_WHEN_IN_USE";
+static NSString* const ACP_PLACES_MONITOR_PERMISSION_WHILE_USING_APP = @"WHILE_USING_APP";
+static NSString* const ACP_PLACES_MONITOR_PERMISSION_ALWAYS_ALLOW = @"ALWAYS_ALLOW";
 
-  // Location
-static NSString* const LOCATION_LATITUDE = @"latitude";
-static NSString* const LOCATION_LONGITUDE = @"longitude";
+@implementation RCTACPPlacesMonitorDataBridge
 
-  // PlacesPOI
-static NSString* const ACP_PLACES_POI_IDENTIFIER = @"identifier";
-static NSString* const ACP_PLACES_POI_NAME = @"name";
-static NSString* const ACP_PLACES_POI_LATITUDE = @"latitude";
-static NSString* const ACP_PLACES_POI_LONGITUDE = @"longitude";
-static NSString* const ACP_PLACES_POI_RADIUS = @"radius";
-static NSString* const ACP_PLACES_POI_USER_IS_WITHIN = @"userIsWithin";
-static NSString* const ACP_PLACES_POI_METADATA = @"metadata";
++ (ACPPlacesMonitorRequestAuthorizationLevel)authLevelFromString: (NSString *) authLevelString {
+    if ([authLevelString isEqualToString:ACP_PLACES_MONITOR_PERMISSION_WHILE_USING_APP]) {
+        return ACPPlacesMonitorRequestAuthorizationLevelWhenInUse;
+    } else {
+        return ACPPlacesRequestMonitorAuthorizationLevelAlways;
+    }
+}
 
-  // GeoFence
-static NSString* const ACP_PLACES_GEOFENCE_IDENTIFIER = @"identifier";
-static NSString* const ACP_PLACES_GEOFENCE_RADIUS = @"radius";
-static NSString* const ACP_PLACES_GEOFENCE_EXPIRATION_DURATION = @"expirationDuration";
-
-  @implementation RCTACPPlacesMonitorDataBridge
-
-  @end
+@end

@@ -27,4 +27,22 @@ RCT_EXPORT_METHOD(extensionVersion: (RCTPromiseResolveBlock) resolve rejecter:(R
   resolve([ACPPlacesMonitor extensionVersion]);
 }
 
+RCT_EXPORT_METHOD(start) {
+[ACPPlacesMonitor start];
+}
+
+RCT_EXPORT_METHOD(stop:(bool) clearData) {
+[ACPPlacesMonitor stop: clearData];
+}
+
+RCT_EXPORT_METHOD(updateLocation) {
+[ACPPlacesMonitor updateLocationNow];
+}
+
+RCT_EXPORT_METHOD(setRequestLocationPermission:(nonnull NSString*)permission) {
+[ACPPlacesMonitor setRequestAuthorizationLevel:[RCTACPPlacesMonitorDataBridge authLevelFromString:permission]];
+}
+
+
+
 @end

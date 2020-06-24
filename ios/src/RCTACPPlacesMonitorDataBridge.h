@@ -15,4 +15,6 @@
 
 @interface RCTACPPlacesMonitorDataBridge : NSObject
 
++ (ACPPlacesMonitorRequestAuthorizationLevel)authLevelFromString: (NSString *) authLevelString;
+
 @end

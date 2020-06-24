@@ -45,4 +45,9 @@ public class RCTACPPlacesMonitorModule extends ReactContextBaseJavaModule {
   public void setRequestLocationPermission(String permission) {
     PlacesMonitor.setRequestLocationPermission(RCTACPPlacesMonitorDataBridge.placesMonitorLocationPermissionFromString(permission));
   }
+
+  @ReactMethod
+  public void setPlacesMonitorMode(int mode) {
+    // No operation API does not exists for android.
+  }
 }

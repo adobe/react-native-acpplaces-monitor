@@ -36,5 +36,9 @@ module.exports = {
 
   setRequestLocationPermission(permission : string) {
     ACPPlacesMonitor.setRequestLocationPermission(permission);
+  },
+
+  setPlacesMonitorMode(mode: number) {
+    ACPPlacesMonitor.setPlacesMonitorMode(mode);
   }
 };
