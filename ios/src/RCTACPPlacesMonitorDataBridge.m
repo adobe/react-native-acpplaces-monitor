@@ -12,9 +12,12 @@ governing permissions and limitations under the License.
 
 #import "RCTACPPlacesMonitorDataBridge.h"
 
-  // @{link PlacesAuthorizationStatus}
+  // @{link ACPPlacesMonitorRequestAuthorizationLevel}
 static NSString* const ACP_PLACES_MONITOR_PERMISSION_WHILE_USING_APP = @"WHILE_USING_APP";
 static NSString* const ACP_PLACES_MONITOR_PERMISSION_ALWAYS_ALLOW = @"ALWAYS_ALLOW";
+
+// @{link ACPPlacesMonitorRequestAuthorizationLevel}
+static NSString* const ACP_PLACES_MONITOR_MODE_CONTINUOUS = @"CONTINUOUS";
 
 @implementation RCTACPPlacesMonitorDataBridge
 
@@ -23,6 +26,14 @@ static NSString* const ACP_PLACES_MONITOR_PERMISSION_ALWAYS_ALLOW = @"ALWAYS_ALL
         return ACPPlacesMonitorRequestAuthorizationLevelWhenInUse;
     } else {
         return ACPPlacesRequestMonitorAuthorizationLevelAlways;
+    }
+}
+
++ (ACPPlacesMonitorMode)monitorModeFromString: (NSString *) mode {
+    if ([mode isEqualToString:ACP_PLACES_MONITOR_MODE_CONTINUOUS]) {
+        return ACPPlacesMonitorModeContinuous;
+    } else {
+        return ACPPlacesMonitorModeSignificantChanges;
     }
 }
 

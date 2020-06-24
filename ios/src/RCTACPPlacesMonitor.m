@@ -43,6 +43,8 @@ RCT_EXPORT_METHOD(setRequestLocationPermission:(nonnull NSString*)permission) {
 [ACPPlacesMonitor setRequestAuthorizationLevel:[RCTACPPlacesMonitorDataBridge authLevelFromString:permission]];
 }
 
-
+RCT_EXPORT_METHOD(setPlacesMonitorMode:(nonnull NSString*)mode) {
+    [ACPPlacesMonitor setPlacesMonitorMode: [RCTACPPlacesMonitorDataBridge monitorModeFromString:mode]];
+}
 
 @end

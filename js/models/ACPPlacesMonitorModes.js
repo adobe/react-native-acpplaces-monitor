@@ -15,21 +15,18 @@ governing permissions and limitations under the License.
 
 'use strict';
 
-module.exports = {
-  // Native models
-  get ACPPlacesMonitorLocationPermission() {
-    return require('./models/ACPPlacesMonitorLocationPermission');
-  },
+const CONTINUOUS = "CONTINUOUS";
+const SIGNIFICANT_CHANGES = "SIGNIFICANT_CHANGES";
 
-  get ACPPlacesMonitorModes() {
-    return require('./models/ACPPlacesMonitorModes');
-  },
+class ACPPlacesMonitorModes {
 
-  // Native modules
-  get ACPPlacesMonitor() {
-    return require('./ACPPlacesMonitor');
+  static get CONTINUOUS() {
+    return CONTINUOUS;
   }
-};
 
+  static get SIGNIFICANT_CHANGES() {
+    return SIGNIFICANT_CHANGES;
+  }
+}
 
-
+module.exports = ACPPlacesMonitorModes;
