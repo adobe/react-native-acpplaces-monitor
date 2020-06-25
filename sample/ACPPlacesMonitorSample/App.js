@@ -14,7 +14,7 @@ written permission of Adobe. (See LICENSE-MIT for details)
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Button, ScrollView, NativeModules, NativeAppEventEmitter,} from 'react-native';
 
-import {ACPPlacesMonitor, ACPPlacesMonitorLocationPermission} from '@adobe/react-native-acpplaces-monitor';
+import {ACPPlacesMonitor, ACPPlacesMonitorLocationPermission, ACPPlacesMonitorModes} from '@adobe/react-native-acpplaces-monitor';
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -28,6 +28,7 @@ export default class App extends Component<Props> {
           <Button title="ACPPlacesMonitor::stop()" onPress={() => this.stop()}/>
           <Button title="ACPPlacesMonitor::updateLocation()" onPress={() => this.updateLocation()}/>
           <Button title="ACPPlacesMonitor::setRequestLocationPermission()" onPress={() => this.setRequestLocationPermission()}/>
+          <Button title="ACPPlacesMonitor::setPlacesMonitorMode()" onPress={() => this.setPlacesMonitorMode()}/>
         </ScrollView>
       </View>
     );
@@ -51,6 +52,10 @@ export default class App extends Component<Props> {
 
   setRequestLocationPermission() {
     ACPPlacesMonitor.setRequestLocationPermission(ACPPlacesMonitorLocationPermission.ALWAYS_ALLOW);
+  }
+
+  setPlacesMonitorMode() {
+    ACPPlacesMonitor.setPlacesMonitorMode(ACPPlacesMonitorModes.CONTINUOUS);
   }
 }
 
