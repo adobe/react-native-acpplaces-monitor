@@ -1,0 +1,8 @@
+rootProject.name = 'ACPPlacesMonitorSample'
+include ':@adobe_react-native-acpplaces'
+project(':@adobe_react-native-acpplaces').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpplaces/android')
+include ':@adobe_react-native-acpcore'
+project(':@adobe_react-native-acpcore').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpcore/android')
+include ':@adobe_react-native-acpplaces-monitor'
+project(':@adobe_react-native-acpplaces-monitor').projectDir = new File(rootProject.projectDir, '../node_modules/@adobe/react-native-acpplaces-monitor/android')
+include ':app'
