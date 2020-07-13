@@ -47,7 +47,7 @@ public class RCTACPPlacesMonitorModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void setPlacesMonitorMode(int mode) {
+  public void setPlacesMonitorMode(String mode) {
     // No operation API does not exists for android.
   }
 }
