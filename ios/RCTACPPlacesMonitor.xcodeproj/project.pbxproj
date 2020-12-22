@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9282E8E32490995300C77F5A /* libACPPlacesMonitor_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9282E8E22490995300C77F5A /* libACPPlacesMonitor_iOS.a */; };
-		9282E8E42490999100C77F5A /* ACPPlacesMonitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9282E8E12490995300C77F5A /* ACPPlacesMonitor.h */; };
+		21B62A9B25911A680039CE4D /* ACPPlacesMonitor.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B62A9A25911A680039CE4D /* ACPPlacesMonitor.xcframework */; };
+		21B62A9E25911A7C0039CE4D /* ACPPlacesMonitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21B62A9D25911A710039CE4D /* ACPPlacesMonitor.h */; };
 		9282E8E7249099CA00C77F5A /* RCTACPPlacesMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9282E8E5249099CA00C77F5A /* RCTACPPlacesMonitor.m */; };
 		9282E8EA249099EE00C77F5A /* RCTACPPlacesMonitorDataBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9282E8E9249099EE00C77F5A /* RCTACPPlacesMonitorDataBridge.m */; };
 /* End PBXBuildFile section */
@@ -20,7 +20,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				9282E8E42490999100C77F5A /* ACPPlacesMonitor.h in CopyFiles */,
+				21B62A9E25911A7C0039CE4D /* ACPPlacesMonitor.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -28,8 +28,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRCTACPPlacesMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTACPPlacesMonitor.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9282E8E12490995300C77F5A /* ACPPlacesMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPPlacesMonitor.h; sourceTree = "<group>"; };
-		9282E8E22490995300C77F5A /* libACPPlacesMonitor_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libACPPlacesMonitor_iOS.a; sourceTree = "<group>"; };
+		21B62A9A25911A680039CE4D /* ACPPlacesMonitor.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ACPPlacesMonitor.xcframework; sourceTree = "<group>"; };
+		21B62A9D25911A710039CE4D /* ACPPlacesMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ACPPlacesMonitor.h; path = "ACPPlacesMonitor.xcframework/ios-arm64_armv7_armv7s/Headers/ACPPlacesMonitor.h"; sourceTree = "<group>"; };
 		9282E8E5249099CA00C77F5A /* RCTACPPlacesMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTACPPlacesMonitor.m; path = src/RCTACPPlacesMonitor.m; sourceTree = "<group>"; };
 		9282E8E6249099CA00C77F5A /* RCTACPPlacesMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTACPPlacesMonitor.h; path = src/RCTACPPlacesMonitor.h; sourceTree = "<group>"; };
 		9282E8E8249099EE00C77F5A /* RCTACPPlacesMonitorDataBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTACPPlacesMonitorDataBridge.h; path = src/RCTACPPlacesMonitorDataBridge.h; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9282E8E32490995300C77F5A /* libACPPlacesMonitor_iOS.a in Frameworks */,
+				21B62A9B25911A680039CE4D /* ACPPlacesMonitor.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,18 +71,10 @@
 		9282E8DF2490995300C77F5A /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				9282E8E02490995300C77F5A /* include */,
-				9282E8E22490995300C77F5A /* libACPPlacesMonitor_iOS.a */,
+				21B62A9D25911A710039CE4D /* ACPPlacesMonitor.h */,
+				21B62A9A25911A680039CE4D /* ACPPlacesMonitor.xcframework */,
 			);
 			path = libs;
-			sourceTree = "<group>";
-		};
-		9282E8E02490995300C77F5A /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9282E8E12490995300C77F5A /* ACPPlacesMonitor.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,9 +84,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RCTACPPlacesMonitor" */;
 			buildPhases = (
+				58B511D91A9E6C8500147676 /* CopyFiles */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
-				58B511D91A9E6C8500147676 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -250,6 +242,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RCTACPPlacesMonitor;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
@@ -273,6 +266,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RCTACPPlacesMonitor;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
