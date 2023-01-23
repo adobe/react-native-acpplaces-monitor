@@ -5,8 +5,13 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/adobe/react-native-acpplaces-monitor/main.svg?logo=circleci)](https://circleci.com/gh/adobe/workflows/react-native-acpplaces-monitor) 
 [![license](https://img.shields.io/npm/l/@adobe/react-native-acpplaces-monitor.svg)](https://github.com/adobe/react-native-acpplaces-monitor/blob/main/LICENSE)
 
-`@adobe/react-native-acpplaces-monitor` is a wrapper around the iOS and Android [AEP Places SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-places) to allow for integration with React Native applications. Functionality to enable Adobe Places is provided entirely through JavaScript documented below.
+## Notice of deprecation
 
+On **August 31, 2021**, the **Places Monitor** extension for the Adobe Experience Platform Mobile SDKs was **deprecated**. Adobe no longer plans to update or support Places Monitor extension beyond August 31st.
+
+## About this project
+
+`@adobe/react-native-acpplaces-monitor` is a wrapper around the iOS and Android [AEP Places SDK](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-places) to allow for integration with React Native applications. Functionality to enable Adobe Places is provided entirely through JavaScript documented below.
 
 ## Installation
 
